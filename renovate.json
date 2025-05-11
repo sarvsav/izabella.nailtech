@@ -4,9 +4,9 @@
     "config:recommended"
   ],
   "automerge": true,
-  "logLevel": "debug",
   "labels": [
-    "bot"
+    "bot",
+    "automerge"
   ],
   "rebaseWhen": "conflicted"
 }
