@@ -17,9 +17,6 @@ export default defineConfig({
 		tailwind(),
 		alpinejs(),
 		mdx(),
-		(await import("@playform/inline")).default({
-			Critters: true,
-		}),
 	],
 	output: "static",
 	devToolbar: {
