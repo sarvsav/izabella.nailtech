@@ -1,22 +1,22 @@
 export const menuMain = [
 	{
 		name: "Home",
-		url: "/",
+		url: "/izabella.nailtech/",
 	},
 	{
 		name: "About",
-		url: "/about-us",
+		url: "/izabella.nailtech/about-us",
 	},
 	{
 		name: "Adopt",
-		url: "/cats",
+		url: "/izabella.nailtech/cats",
 	},
 	{
 		name: "Blog",
-		url: "/blog",
+		url: "/izabella.nailtech/blog",
 	},
 	{
 		name: "Contact",
-		url: "/contact",
+		url: "/izabella.nailtech/contact",
 	},
 ];
