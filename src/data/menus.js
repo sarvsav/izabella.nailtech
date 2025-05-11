@@ -4,7 +4,7 @@ export const menuMain = [
 		url: "/",
 	},
 	{
-		name: "About Us",
+		name: "About",
 		url: "/about-us",
 	},
 	{

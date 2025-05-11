@@ -53,7 +53,7 @@ const faq = [
 				<div class="ml-auto">
 					<div class="prose prose-xl prose-invert text-white lg:text-right text-balance">
 						<h1 class="text-5xl lg:text-8xl mb-0">Welcome to our pet shelter!</h1>
-						<p>
+						<p class="magical">
 							We have a variety of pets available for adoption. Please take a look at our available pets
 							and contact us if you are interested in adopting one. We are always looking for loving homes
 							for our pets. Thank you for considering adoption!
@@ -161,13 +161,37 @@ const faq = [
 	<Section class:list={"relative"}>
 		<Image src={CatBackground} alt="Cat" class:list={"absolute inset-0 w-full h-full object-cover"} />
 		<div class="bg-gradient-to-r from-fuchsia-900/80 to-teal-900/80 absolute inset-0"></div>
-
 		<Container class:list={"relative z-10"}>
 			<CatNameGenerator title="Help me name my new cat!" />
 		</Container>
 		<script>
 			import { gsap } from "gsap";
+			import { SplitText } from "gsap/SplitText";
 			console.log("GSAP loaded", gsap.version);
+			gsap.registerPlugin(SplitText);
+
+			document.fonts.ready.then(() => {
+				// Split the text into words
+				let split = SplitText.create(".magical", {
+					type: "chars, lines, words",
+					onSplit: (self) => {
+						gsap.from(split.chars, {
+							y: 100,
+							autoAlpha: 0,
+							stagger: 0.05,
+						});
+					}
+				});
+			});
+
+			let split = SplitText.create(".magical", {
+				type: "chars, lines, words",
+			});
+			gsap.from(split.chars, {
+				y: 100,
+				autoAlpha: 0,
+				stagger: 0.05,
+			})
 		</script>
 	</Section>
 </Layout>
