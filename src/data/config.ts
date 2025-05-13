@@ -1,8 +1,8 @@
 // Global variables
 export const siteLang = "en-US";
 export const siteCurrency = "USD";
-export const siteDomain = "pawstronaut.com";
-export const siteName = "Pawstronaut";
+export const siteDomain = "izabella.nailtech.com";
+export const siteName = "izabella.nailtech";
 export const siteSlogan = "The best pet shelter in the galaxy!";
 export const themeColor = "#FF0000";
 
@@ -12,8 +12,8 @@ export const phone = {
 };
 
 export const email = {
-	href: "mailto:info@pawstronaut.com",
-	label: "info@pawstronaut.com",
+	href: "mailto:info@izabella.nailtech.com",
+	label: "info@izabella.nailtech.com",
 };
 
 export const address = {
