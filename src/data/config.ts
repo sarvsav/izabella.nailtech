@@ -3,7 +3,7 @@ export const siteLang = "en-US";
 export const siteCurrency = "USD";
 export const siteDomain = "izabella.nailtech.com";
 export const siteName = "izabella.nailtech";
-export const siteSlogan = "The best pet shelter in the galaxy!";
+export const siteSlogan = "꧁ I make nail contact, before I make eye contact. ꧂";
 export const themeColor = "#FF0000";
 
 export const phone = {
@@ -36,7 +36,7 @@ export const socialMedia = {
 		icon: "x",
 	},
 	instagram: {
-		url: "https://instagram.com",
+		url: "https://www.instagram.com/izabella.nailtech/",
 		label: "Instagram",
 		icon: "instagram",
 	},
