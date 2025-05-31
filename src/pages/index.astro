@@ -20,25 +20,25 @@ import CatTwo from "~/assets/images/pexels-minan1398-1003994.jpg";
 // Faq
 const faq = [
 	{
-		question: "What is the adoption process?",
-		answer: "The adoption process is simple. You can view our available pets on our website. If you see a pet you are interested in, you can contact us to schedule a meet and greet. If you decide to adopt the pet, you will need to fill out an adoption application and pay the adoption fee. Once the adoption is complete, you can take your new pet home!",
+		question: "How do I book an appointment?",
+		answer: "Booking your nail session is easy. Simply browse our available styles in the Gallery or Services section. Once you’re inspired, head to our Booking page to select your preferred time and artist. You’ll receive a confirmation once your appointment is secured.",
 	},
 	{
-		question: "What is the adoption fee?",
-		answer: "The adoption fee varies depending on the pet. The fee covers the cost of spaying/neutering, vaccinations, microchipping, and other medical expenses. The fee also helps support our shelter and the care of our animals.",
+		question: "What are your service rates?",
+		answer: "Our pricing varies depending on the complexity of the design, products used, and nail length. Each service includes premium products and meticulous care. Please refer to our Services page for a detailed breakdown.",
 	},
 	{
-		question: "Can I adopt a pet if I live out of state?",
-		answer: "Yes, you can adopt a pet if you live out of state. However, you will need to come to our shelter to meet the pet and complete the adoption process. We do not ship pets, so you will need to pick up your new pet in person.",
+		question: "Do you accept clients from outside the city?",
+		answer: "Absolutely! We welcome clients from all locations. While we don’t offer mobile or at-home services at the moment, you’re invited to visit our studio for a full luxury experience. If you're traveling, let us know in advance so we can accommodate your schedule.",
 	},
 	{
-		question: "Do you have a return policy?",
-		answer: "Yes, we have a return policy. If for any reason you are unable to keep your adopted pet, you can return the pet to our shelter. We want to ensure that all of our pets find loving forever homes, so we are here to help if you need to return a pet.",
+		question: "What is your cancellation policy?",
+		answer: "We understand that plans change. To respect everyone’s time, we kindly ask for at least 24 hours' notice for cancellations or rescheduling. Missed appointments or late cancellations may incur a fee. Please see our full Cancellation Policy on the Booking page.",
 	},
 ];
 ---
 
-<Layout title="Home" pageTitle="Home" description="Welcome to our pet shelter!">
+<Layout title="Home" pageTitle="Home" description="Welcome to Iza's Nailtech Art Studio!">
 	<Section class:list={"relative"}>
 		<Picture
 			src={CatBackground}
@@ -52,7 +52,7 @@ const faq = [
 			<div class="flex items-center h-full">
 				<div class="ml-auto">
 					<div class="prose prose-xl prose-invert text-white lg:text-right text-balance">
-						<h1 class="text-5xl lg:text-8xl mb-0">Welcome to our pet shelter!</h1>
+						<h1 class="text-5xl lg:text-8xl mb-0">Welcome to Iza's Nailtech Art Studio!</h1>
 						<p class="magical">
 							We have a variety of pets available for adoption. Please take a look at our available pets
 							and contact us if you are interested in adopting one. We are always looking for loving homes
@@ -72,11 +72,9 @@ const faq = [
 		<Container>
 			<Hero>
 				<div slot="hero-content-left" class="prose">
-					<h2 class="h2 text-teal-500">Adopt a pet today!</h2>
+					<h2 class="h2 text-teal-500">Book your Nail Transformation Today</h2>
 					<p class="leading-loose">
-						We have a variety of pets available for adoption. Please take a look at our available pets and
-						contact us if you are interested in adopting one. We are always looking for loving homes for our
-						pets. Thank you for considering adoption!
+						Explore our exclusive range of nail art styles—each design created to elevate your look and express your individuality. ✨ Browse our portfolio and get in touch to reserve your appointment. We can’t wait to bring your dream nails to life. Thank you for choosing elegance at your fingertips! 💖
 					</p>
 
 					<div class="not-prose mt-16">
@@ -105,11 +103,9 @@ const faq = [
 	<Section>
 		<Container>
 			<Heading>
-				<h2 slot="heading-title" class="h2 text-teal-500">Available Cats</h2>
+				<h2 slot="heading-title" class="h2 text-teal-500">Featured Nail Art Styles</h2>
 				<p slot="heading-content">
-					We have a variety of cats available for adoption. Please take a look at our available cats and
-					contact us if you are interested in adopting one. We are always looking for loving homes for our
-					cats. Thank you for considering adoption!
+					Discover our curated collection of signature nail designs—each crafted with precision, creativity, and a touch of glam. ✨ Take a look at our latest styles and get inspired for your next appointment. We’re here to help you find the perfect look that suits your personality. Thank you for letting us be part of your beauty journey!
 				</p>
 			</Heading>
 
@@ -137,7 +133,7 @@ const faq = [
 
 		<Container class:list={"relative z-10"}>
 			<CallToAction
-				title="Contact us today to adopt a cat"
+				title="Ready for Gorgeous Nails? Reserve Your Spot"
 				link={{ title: "Adopt", url: "/cats", color: "white" }}
 			/>
 		</Container>
@@ -146,11 +142,9 @@ const faq = [
 	<Section>
 		<Container>
 			<Heading>
-				<h2 slot="heading-title" class="h2 text-teal-500">News from our shelter</h2>
+				<h2 slot="heading-title" class="h2 text-teal-500">Studio Journal</h2>
 				<p slot="heading-content">
-					Welcome to our blog! Here you will find the latest news and updates from our pet shelter. We are
-					passionate about helping pets find loving forever homes, and we are excited to share our stories
-					with you. Thank you for supporting our shelter!
+					Welcome to our blog—your go-to source for the latest trends, updates, and inspirations from our nail art studio. 💅 We're passionate about creativity, self-expression, and elevating beauty through the art of nails. Here, we’ll share behind-the-scenes moments, style tips, artist spotlights, and more. Thank you for being part of our journey and supporting the beauty of individuality—one nail at a time.
 				</p>
 			</Heading>
 
@@ -162,7 +156,7 @@ const faq = [
 		<Image src={CatBackground} alt="Cat" class:list={"absolute inset-0 w-full h-full object-cover"} />
 		<div class="bg-gradient-to-r from-fuchsia-900/80 to-teal-900/80 absolute inset-0"></div>
 		<Container class:list={"relative z-10"}>
-			<CatNameGenerator title="Help me name my new cat!" />
+			<CatNameGenerator title="Help Me Pick a Surprise Style!" />
 		</Container>
 		<script>
 			import { gsap } from "gsap";
