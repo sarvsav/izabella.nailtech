@@ -110,7 +110,7 @@ label {
 
 body,
 section.bg-white {
-	background-image: url('/pattern.jpg');
+	background-image: url('/izabella.nailtech/pattern.jpg');
 	background-repeat: repeat;
 }
 
@@ -120,5 +120,5 @@ section.bg-white {
 	font-family: "Caveat Brush";
 	font-style: normal;
 	font-weight: 400;
-	src: url("/fonts/caveat/caveat-brush-v11-latin-regular.woff2") format("woff2");
+	src: url("/izabella.nailtech/fonts/caveat/caveat-brush-v11-latin-regular.woff2") format("woff2");
 }

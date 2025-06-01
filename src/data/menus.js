@@ -8,8 +8,8 @@ export const menuMain = [
 		url: "/izabella.nailtech/about-us",
 	},
 	{
-		name: "Adopt",
-		url: "/izabella.nailtech/cats",
+		name: "Book",
+		url: "/izabella.nailtech/book",
 	},
 	{
 		name: "Blog",
