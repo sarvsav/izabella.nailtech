@@ -38,7 +38,7 @@ const { cat } = Astro.props;
 							href="#adoption-form"
 							color="fuchsia"
 							class:list={"button bg-gradient-to-r from-fuchsia-500 to-teal-500 text-white"}
-							>Adopt me now!</Button
+							>Book now!</Button
 						>
 					</div>
 				</div>
@@ -52,11 +52,7 @@ const { cat } = Astro.props;
 				<div class="px-4 py-8 sm:px-6">
 					<h3>Information</h3>
 					<p class="mt-4 max-w-2xl">
-						Here you can find detailed information about our lovely cat, {cat.data.name}. This section
-						provides insights into their personality, favorite activities, and unique traits that make them
-						special. Whether you're looking to adopt or just curious, we hope you enjoy learning more about {
-							cat.data.name
-						}.
+						Here’s everything you need to know about this look:
 					</p>
 				</div>
 				<div class="border-t border-gray-100">
@@ -67,56 +63,54 @@ const { cat } = Astro.props;
 						</div>
 
 						<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-							<dt class="text-sm font-semibold">Gender</dt>
-							<dd class="mt-1 sm:col-span-2 sm:mt-0 capitalize">{cat.data.gender}</dd>
+							<dt class="text-sm font-semibold">Palette</dt>
+							<dd class="mt-1 sm:col-span-2 sm:mt-0 capitalize">{cat.data.palette}</dd>
 						</div>
 
 						<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-							<dt class="text-sm font-semibold">Breed</dt>
-							<dd class="mt-1 sm:col-span-2 sm:mt-0 capitalize">{cat.data.breed}</dd>
+							<dt class="text-sm font-semibold">Finish</dt>
+							<dd class="mt-1 sm:col-span-2 sm:mt-0 capitalize">{cat.data.finish}</dd>
 						</div>
 
 						<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-							<dt class="text-sm font-semibold">Age</dt>
-							<dd class="mt-1 sm:col-span-2 sm:mt-0 capitalize">{cat.data.age}</dd>
+							<dt class="text-sm font-semibold">Design Details</dt>
+							<dd class="mt-1 sm:col-span-2 sm:mt-0 capitalize">{cat.data.design_details}</dd>
 						</div>
 
 						<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-							<dt class="text-sm font-semibold">Date of birth</dt>
-							<dd class="mt-1 sm:col-span-2 sm:mt-0 capitalize">
-								{cat.data.birthDate ? new Date(cat.data.birthDate).toISOString().split("T")[0] : "N/A"}
-							</dd>
+							<dt class="text-sm font-semibold">Mood</dt>
+							<dd class="mt-1 sm:col-span-2 sm:mt-0 capitalize">{cat.data.mood}</dd>
 						</div>
 
 						<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-							<dt class="text-sm font-semibold">Child friendly?</dt>
+							<dt class="text-sm font-semibold">Shape</dt>
+							<dd class="mt-1 sm:col-span-2 sm:mt-0 capitalize">{cat.data.shape}</dd>
+						</div>
+
+						<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+							<dt class="text-sm font-semibold">Office-friendly?</dt>
 							<dd class="mt-1 sm:col-span-2 sm:mt-0 capitalize">
 								{cat.data.childFriendly ? "Yes" : "No"}
 							</dd>
 						</div>
 
 						<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-							<dt class="text-sm font-semibold">Cat friendly?</dt>
+							<dt class="text-sm font-semibold">Statement-making?</dt>
 							<dd class="mt-1 sm:col-span-2 sm:mt-0 capitalize">{cat.data.catFriendly ? "Yes" : "No"}</dd>
 						</div>
 
 						<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-							<dt class="text-sm font-semibold">Dog friendly?</dt>
+							<dt class="text-sm font-semibold">Fashion-forward?</dt>
 							<dd class="mt-1 sm:col-span-2 sm:mt-0 capitalize">{cat.data.dogFriendly ? "Yes" : "No"}</dd>
 						</div>
 
 						<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-							<dt class="text-sm font-semibold">Outside cat?</dt>
+							<dt class="text-sm font-semibold"> Works with gold/silver accessories?</dt>
 							<dd class="mt-1 sm:col-span-2 sm:mt-0 capitalize">{cat.data.outsideCat ? "Yes" : "No"}</dd>
 						</div>
 
 						<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-							<dt class="text-sm font-semibold">Sterilized?</dt>
-							<dd class="mt-1 sm:col-span-2 sm:mt-0 capitalize">{cat.data.sterilized ? "Yes" : "No"}</dd>
-						</div>
-
-						<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-							<dt class="text-sm font-semibold">Available for adoption since</dt>
+							<dt class="text-sm font-semibold">Available since</dt>
 							<dd class="mt-1 sm:col-span-2 sm:mt-0 capitalize">
 								{new Date(cat.data.listDate).toISOString().split("T")[0]}
 							</dd>
@@ -132,7 +126,9 @@ const { cat } = Astro.props;
 			<div class="max-w-4xl mx-auto ring ring-teal-500 rounded-2xl px-4 py-8 sm:px-6">
 				<h3>I'm interested</h3>
 				<p class="mt-4 max-w-2xl mb-16 text-balance">
-					I would love to adopt {cat.data.name}! Please contact me with more information about the adoption!
+					💅 Interested in trying this look for yourself?
+We’d love to give your nails the spotlight they deserve.
+Fill below form to book your {cat.data.name} session with one of our talented artists.
 				</p>
 
 				<FormAdoption />

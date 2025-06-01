@@ -13,11 +13,9 @@ const cats = await getCollection("cats");
 	<Section class:list={"background-pattern"}>
 		<Container>
 			<Heading>
-				<h1 slot="heading-title">All Our Cats</h1>
+				<h1 slot="heading-title">Book Your Appointment</h1>
 				<p slot="heading-content">
-					We have a variety of cats available for adoption. Please take a look at our available cats and
-					contact us if you are interested in adopting one. We are always looking for loving homes for our
-					cats. Thank you for considering adoption!
+					Discover our range of nail art services designed to help you express your unique style. Whether you're looking for a classic manicure, bold nail art, or something seasonal, we’ve got you covered. Browse our available time slots and book your appointment online with ease. We can’t wait to pamper your nails and bring your vision to life!
 				</p>
 			</Heading>
 
@@ -26,23 +24,22 @@ const cats = await getCollection("cats");
 				class="my-8 flex flex-wrap gap-x-8 gap-y-4 items-center justify-center bg-gradient-to-r from-fuchsia-100 to-teal-100 p-4 rounded-2xl"
 			>
 				<div>
-					<label for="gender">Gender</label>
+					<label for="gender">Nail Technician</label>
 					<select
 						name="gender"
 						id="gender"
 						class="bg-transparent rounded-full ring-1 px-2 py-1 ring-teal-500 mt-2"
 					>
 						<option value="all" class="text-black">All</option>
-						<option value="male">Male</option>
-						<option value="female">Female</option>
+						<option value="izabella">Izabella</option>
 					</select>
 				</div>
 
 				<div>
-					<label for="breed">Breed</label>
+					<label for="palette">Service Type</label>
 					<select
-						name="breed"
-						id="breed"
+						name="palette"
+						id="palette"
 						class="bg-transparent rounded-full ring-1 px-2 py-1 ring-teal-500 mt-2"
 					>
 						<option value="all">All</option>
@@ -50,7 +47,7 @@ const cats = await getCollection("cats");
 				</div>
 
 				<div>
-					<label for="child-friendly">Child Friendly</label>
+					<label for="child-friendly">Design Style</label>
 					<select
 						name="child-friendly"
 						id="child-friendly"
@@ -61,7 +58,7 @@ const cats = await getCollection("cats");
 				</div>
 
 				<div>
-					<label for="sterilized">Sterilized</label>
+					<label for="sterilized">Nail Prep Add-on</label>
 					<select
 						name="sterilized"
 						id="sterilized"

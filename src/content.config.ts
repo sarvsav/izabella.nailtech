@@ -6,7 +6,11 @@ const cats = defineCollection({
 	schema: ({ image }) =>
 		z.object({
 			name: z.string(),
-			breed: z.string(),
+			palette: z.string(),
+			design_details: z.string().optional(),
+			mood: z.string().optional(),
+			finish: z.string().optional(),
+			shape: z.string().optional(),
 			gender: z.enum(["male", "female"]),
 			age: z.number().min(0),
 			birthDate: z.coerce.date().optional(),
