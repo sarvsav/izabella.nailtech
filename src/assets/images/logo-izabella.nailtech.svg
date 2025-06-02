@@ -2015,4 +2015,16 @@ L 98.00 246.00
 C 97.83 243.69 96.95 243.68 96.00 242.00
 C 93.38 240.83 90.26 243.21 92.00 246.00 Z"/>
 </g>
+<!-- Define style and import Caveat font -->
+  <defs>
+    <style type="text/css"><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+      .fancy-text {
+        font-family: 'Caveat', cursive;
+        fill: green;
+        font-size: 24px;
+      }
+    ]]></style>
+  </defs>
+<text xml:space="preserve" font-family="Lato" font-size="29" font-style="normal" font-weight="400" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(30,207,48); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="132" y="237" class="fancy-text">I/G</tspan></text>
 </svg>
